@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: black">
+        <a-entity position="0 -5 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-entity position="0 0 0" rotation="0 0 0"
+           animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 20000">
+           <a-box position="0 0 0" color="gray" width = "5" height = "5" length = 20>
+            <a-box position="-1 1.5 0" color="black" width = "1.5" height = ".5" rotation="0 12 0">
+                <a-box position="-.5 0 0.01" color="red" width = ".1" height = ".1" ></a-box>
+                <a-box position=".5 0 -0.01" color="white" width = ".1" height = ".1" ></a-box>
+            </a-box>
+            <a-box position="1 1.5 0" color="black" width = "1.5" height = ".5"  rotation="0 -12 0">
+                <a-box position=".5 0 0.01" color="red" width = ".1" height = ".1" ></a-box>
+                <a-box position="-.5 0 -0.01" color="white" width = ".1" height = ".1" ></a-box>
+            </a-box>
+           <a-box position="0 0 0.01" color="red" width = "2.5" height = "1"></a-box>
+           <a-box position="0 0 -0.01" color="white" width = "2.5" height = ".1"></a-box>
+        </a-entity>
+
+        <a-entity>
+    
+        <a-box position="0 -5.4 0" color="gray" width = "8" height = "6">
+            <a-box position="0 0 1" color="white" width = "6" height = "4">
+                <a-box position="-2 1 .5" color="green" width = ".5" height = ".5"></a-box>
+                <a-box position="-1 1 .5" color="purple" width = ".5" height = ".5"></a-box>
+                <a-box position="-2 0 .5" color="yellow" width = ".5" height = ".5"></a-box>
+                <a-box position="-1 0 .5" color="blue" width = ".5" height = ".5"></a-box>
+                <a-box position="-2 -1 .5" color="pink" width = ".5" height = ".5"></a-box>
+                <a-box position="-1 -1 .5" color="orange" width = ".5" height = ".5"></a-box>
+            </a-box>
+            <a-box position="-5 0 0" color="gray" width = ".5" height = "5"></a-box>
+            <a-box position="-4.5 2.5 0" color="gray" width = "1.5" height = ".5"></a-box>
+            <a-box position="5 0 0" color="gray" width = ".5" height = "5"></a-box>
+            <a-box position="4.5 2.5 0" color="gray" width = "1.5" height = ".5"></a-box>
+        </a-box>
+        <a-box position="2 -10 0" color="gray" width = "2" height = "5"></a-box>
+        <a-box position="-2 -10 0" color="gray" width = "2" height = "5"></a-box>
+    </a-entity>
+
+    </a-scene>
+</body>
+
+</html>
